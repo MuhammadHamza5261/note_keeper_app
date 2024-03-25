@@ -14,15 +14,14 @@ class _NoteDetailScreenState extends State<NoteDetailScreen> {
 
   // create a static list
 
-  static var _priorities = [
+  static final _priorities = [
     'High',
     'Low',
   ];
 
+
   @override
   Widget build(BuildContext context) {
-
-
 
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
@@ -110,7 +109,7 @@ class _NoteDetailScreenState extends State<NoteDetailScreen> {
                   height: height*0.065,
                   width: width *0.3,
                   child: ElevatedButton(
-                    
+
                     style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(5),
