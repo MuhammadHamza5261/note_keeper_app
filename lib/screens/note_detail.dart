@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class NoteDetailScreen extends StatefulWidget {
   const NoteDetailScreen({super.key});
 
@@ -32,7 +33,7 @@ class _NoteDetailScreenState extends State<NoteDetailScreen> {
           onTap: (){
             Navigator.pop(context);
           },
-            child: Icon(Icons.arrow_back,color: Colors.white,)),
+            child: const Icon(Icons.arrow_back,color: Colors.white,)),
         backgroundColor: Colors.purple,
         centerTitle: true,
         title: const Text('Edit Note',
@@ -53,7 +54,7 @@ class _NoteDetailScreenState extends State<NoteDetailScreen> {
                     child: Text(dropDownStringItem),
                   );
                 }).toList(),
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.black87
 
                 ),
@@ -66,7 +67,7 @@ class _NoteDetailScreenState extends State<NoteDetailScreen> {
               ),
             ),
            Padding(
-             padding: EdgeInsets.symmetric(horizontal: 20,vertical: 15),
+             padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 15),
              child: TextFormField(
                controller: titleController,
                onChanged: (value){
@@ -75,7 +76,7 @@ class _NoteDetailScreenState extends State<NoteDetailScreen> {
                decoration: InputDecoration(
                  labelText: 'Title',
                  border: OutlineInputBorder(
-                   borderRadius: BorderRadius.circular(5.0)
+                   borderRadius: BorderRadius.circular(5.0),
                  ),
                ),
 
@@ -83,7 +84,7 @@ class _NoteDetailScreenState extends State<NoteDetailScreen> {
            ),
 
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20,vertical: 15),
+              padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 15),
               child: TextFormField(
                 controller: descriptionController,
                 onChanged: (value){
@@ -98,7 +99,7 @@ class _NoteDetailScreenState extends State<NoteDetailScreen> {
 
               ),
             ),
-           SizedBox(
+         const  SizedBox(
              height: 20,
            ),
 
